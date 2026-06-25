@@ -11,7 +11,7 @@ public class Principal {
         }
 
         int cantidad = Integer.parseInt(cantidadStr);
-        // Inicialización del arreglo 
+        // Inicializacion del arreglo 
         Persona[] listaPersonas = new Persona[cantidad];
 
         // Captura de datos de cada persona
@@ -22,7 +22,7 @@ public class Principal {
             int edad = Integer.parseInt(JOptionPane.showInputDialog("Edad:"));
             
             String sexoInput = JOptionPane.showInputDialog("Sexo (H para Hombre, M para Mujer):");
-            // Si el usuario da cancelar o deja vacio, pasamos un caracter vacío para activar el valor por defecto
+            // Si el usuario da cancelar o deja vacio, pasamos un caracter vacio para activar el valor por defecto
             char sexo = (sexoInput != null && !sexoInput.trim().isEmpty()) ? sexoInput.charAt(0) : ' ';
 
             int peso = Integer.parseInt(JOptionPane.showInputDialog("Peso (en kg enteros):"));
